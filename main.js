@@ -12,7 +12,7 @@ async function getData() {
 getData();
 
 function displayData(data) {
-  const container = document.getElementById("container");
+  const container = document.querySelector("#container");
   container.innerHTML = data
     .map((product) => {
       const stars = Math.round(product.rating.rate);
